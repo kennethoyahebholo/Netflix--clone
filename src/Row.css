@@ -1,15 +1,19 @@
-.row{
- margin-left: 20px;
+.row {
+  margin-left: 20px;
+}
+
+.row__text {
+  font-size: 12px;
 }
 
 .row__posters {
- display: flex;
- overflow-y: hidden;
- overflow-x: scroll;
- padding: 20px;
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  padding: 20px;
 }
 .row__posters::-webkit-scrollbar {
- display: none;
+  display: none;
 }
 
 .row__poster {
@@ -21,14 +25,26 @@
 }
 
 .row__poster:hover {
- transform: scale(1.08);
+  transform: scale(1.08);
 }
 
-.row__posterLarge{
- min-height: 250px;
+.row__posterLarge {
+  min-height: 250px;
 }
 
-.row__posterLarge:hover{
- transform: scale(1.09) ;
- /* opacity: 1; */
+.row__posterLarge:hover {
+  transform: scale(1.09);
+  /* opacity: 1; */
+}
+
+@media (min-width: 450px) {
+  .row__text {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 850px) {
+  .row__text {
+    font-size: 25px;
+  }
 }
